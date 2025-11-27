@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="th">
+"<!DOCTYPE html>
+<html lang=""th"">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
     <title>แบบฟอร์มตอบแบบสอบถาม</title>
     <!-- 1. เพิ่ม LIFF SDK -->
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+    <script charset=""utf-8"" src=""https://static.line-scdn.net/liff/edge/2/sdk.js""></script>
+    <link href=""https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sarabun:wght@400;500;700&display=swap"" rel=""stylesheet"">
     <style>
         * {
             margin: 0;
@@ -88,7 +88,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             appearance: none;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+            background-image: url(""data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e"");
             background-position: right 12px center;
             background-repeat: no-repeat;
             background-size: 16px;
@@ -314,84 +314,84 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
+    <div class=""container"">
+        <div class=""header"">
             <h1>แบบฟอร์มตอบแบบสอบถาม</h1>
         </div>
-        <div class="content">
-            <form id="questionnaireForm">
+        <div class=""content"">
+            <form id=""questionnaireForm"">
                 <!-- Page 1: Participant Information -->
-                <div id="page1" class="page active">
-                     <div class="instruction-box">
+                <div id=""page1"" class=""page active"">
+                     <div class=""instruction-box"">
                         <p>โปรดอ่านคำชี้แจงและตอบคำถามต่อไปนี้ตามความคิดเห็นของท่าน เพื่อนำข้อมูลไปใช้ในการพัฒนาต่อไป ขอขอบคุณในความร่วมมือ</p>
                     </div>
                     
-                    <div id="loader" style="text-align: center; padding: 2rem 0;">
-                        <div class="spinner" style="margin: 0 auto;"></div>
-                        <p style="margin-top: 1rem; color: #6b7280;">กำลังเชื่อมต่อและโหลดข้อมูล...</p>
+                    <div id=""loader"" style=""text-align: center; padding: 2rem 0;"">
+                        <div class=""spinner"" style=""margin: 0 auto;""></div>
+                        <p style=""margin-top: 1rem; color: #6b7280;"">กำลังเชื่อมต่อและโหลดข้อมูล...</p>
                     </div>
 
                     <!-- ส่วน Login สำหรับ Desktop -->
-                    <div id="loginSection" style="display: none; text-align: center; padding: 20px 0;">
-                        <h3 style="margin-bottom: 16px;">กรุณาเข้าสู่ระบบ</h3>
-                        <p style="margin-bottom: 24px; color: #6B7280;">จำเป็นต้องเข้าสู่ระบบ LINE เพื่อยืนยันตัวตน และเพื่อให้ระบบสามารถส่งผลการตอบกลับไปยังไลน์ของคุณได้</p>
-                        <button type="button" id="lineLoginBtn" class="btn btn-line-login">
+                    <div id=""loginSection"" style=""display: none; text-align: center; padding: 20px 0;"">
+                        <h3 style=""margin-bottom: 16px;"">กรุณาเข้าสู่ระบบ</h3>
+                        <p style=""margin-bottom: 24px; color: #6B7280;"">จำเป็นต้องเข้าสู่ระบบ LINE เพื่อยืนยันตัวตน และเพื่อให้ระบบสามารถส่งผลการตอบกลับไปยังไลน์ของคุณได้</p>
+                        <button type=""button"" id=""lineLoginBtn"" class=""btn btn-line-login"">
                             เข้าสู่ระบบด้วย LINE
                         </button>
                         <!-- ซ่อนปุ่ม Guest เพราะเราต้องการ User ID จริง -->
-                        <button type="button" id="guestLoginBtn" class="btn btn-guest" style="font-size: 0.9em; display: none;">
+                        <button type=""button"" id=""guestLoginBtn"" class=""btn btn-guest"" style=""font-size: 0.9em; display: none;"">
                             ทดสอบระบบ (Guest Mode)
                         </button>
                     </div>
 
-                    <div id="participantSection" style="display: none;">
-                        <div class="form-group">
-                            <label class="form-label" for="participant">กรุณาเลือกชื่อของคุณ</label>
-                            <div class="dropdown">
-                                <select id="participant" name="participant" required>
-                                    <option value="" disabled selected>เลือก เลขที่-ยศ-ชื่อ-สกุล</option>
+                    <div id=""participantSection"" style=""display: none;"">
+                        <div class=""form-group"">
+                            <label class=""form-label"" for=""participant"">กรุณาเลือกชื่อของคุณ</label>
+                            <div class=""dropdown"">
+                                <select id=""participant"" name=""participant"" required>
+                                    <option value="""" disabled selected>เลือก เลขที่-ยศ-ชื่อ-สกุล</option>
                                 </select>
                             </div>
                         </div>
-                        <div id="errorMessage" style="display: none; color: #EF4444; background: #FEF2F2; padding: 10px; border-radius: 6px; text-align: center; margin-bottom: 1rem; border: 1px solid #FECACA;">
+                        <div id=""errorMessage"" style=""display: none; color: #EF4444; background: #FEF2F2; padding: 10px; border-radius: 6px; text-align: center; margin-bottom: 1rem; border: 1px solid #FECACA;"">
                             กรุณาเลือกชื่อของคุณก่อนไปหน้าถัดไป
                         </div>
-                        <button type="button" id="nextButton" class="btn btn-primary">ไปหน้าถัดไป</button>
+                        <button type=""button"" id=""nextButton"" class=""btn btn-primary"">ไปหน้าถัดไป</button>
                     </div>
                 </div>
 
                 <!-- Page 2: Questions -->
-                <div id="page2" class="page">
-                    <button type="button" id="backButton" class="btn btn-back">← กลับ</button>
-                    <div class="problem-statement">
+                <div id=""page2"" class=""page"">
+                    <button type=""button"" id=""backButton"" class=""btn btn-back"">← กลับ</button>
+                    <div class=""problem-statement"">
                         <h3>คำชี้แจง</h3>
-                        <h4 id="problem-lesson" style="font-weight: 500; margin-bottom: 1rem; color: #374151;"></h4>
-                        <p id="problem-description"></p>
-                        <div class="image-gallery">
-                            <div id="img-container-1" style="display:none;"><img id="image1" src="" alt="ภาพที่ 1" onerror="this.style.display='none'"><p id="image1-caption" class="image-caption"></p></div>
-                            <div id="img-container-2" style="display:none;"><img id="image2" src="" alt="ภาพที่ 2" onerror="this.style.display='none'"><p id="image2-caption" class="image-caption"></p></div>
-                            <div id="img-container-3" style="display:none;"><img id="image3" src="" alt="ภาพที่ 3" onerror="this.style.display='none'"><p id="image3-caption" class="image-caption"></p></div>
+                        <h4 id=""problem-lesson"" style=""font-weight: 500; margin-bottom: 1rem; color: #374151;""></h4>
+                        <p id=""problem-description""></p>
+                        <div class=""image-gallery"">
+                            <div id=""img-container-1"" style=""display:none;""><img id=""image1"" src="""" alt=""ภาพที่ 1"" onerror=""this.style.display='none'""><p id=""image1-caption"" class=""image-caption""></p></div>
+                            <div id=""img-container-2"" style=""display:none;""><img id=""image2"" src="""" alt=""ภาพที่ 2"" onerror=""this.style.display='none'""><p id=""image2-caption"" class=""image-caption""></p></div>
+                            <div id=""img-container-3"" style=""display:none;""><img id=""image3"" src="""" alt=""ภาพที่ 3"" onerror=""this.style.display='none'""><p id=""image3-caption"" class=""image-caption""></p></div>
                         </div>
                     </div>
                     
-                    <div class="form-group"><label id="question1-label" for="answer1" class="form-label"></label><textarea id="answer1" class="textarea" placeholder="กรอกคำตอบของคุณที่นี่..."></textarea></div>
-                    <div class="form-group"><label id="question2-label" for="answer2" class="form-label"></label><textarea id="answer2" class="textarea" placeholder="กรอกคำตอบของคุณที่นี่..."></textarea></div>
-                    <div class="form-group"><label id="question3-label" for="answer3" class="form-label"></label><textarea id="answer3" class="textarea" placeholder="กรอกคำตอบของคุณที่นี่..."></textarea></div>
-                    <div class="form-group"><label id="question4-label" for="answer4" class="form-label"></label><textarea id="answer4" class="textarea" placeholder="กรอกคำตอบของคุณที่นี่..."></textarea></div>
-                    <div class="form-group"><label id="question5-label" for="answer5" class="form-label"></label><textarea id="answer5" class="textarea" placeholder="กรอกคำตอบของคุณที่นี่..."></textarea></div>
+                    <div class=""form-group""><label id=""question1-label"" for=""answer1"" class=""form-label""></label><textarea id=""answer1"" class=""textarea"" placeholder=""กรอกคำตอบของคุณที่นี่...""></textarea></div>
+                    <div class=""form-group""><label id=""question2-label"" for=""answer2"" class=""form-label""></label><textarea id=""answer2"" class=""textarea"" placeholder=""กรอกคำตอบของคุณที่นี่...""></textarea></div>
+                    <div class=""form-group""><label id=""question3-label"" for=""answer3"" class=""form-label""></label><textarea id=""answer3"" class=""textarea"" placeholder=""กรอกคำตอบของคุณที่นี่...""></textarea></div>
+                    <div class=""form-group""><label id=""question4-label"" for=""answer4"" class=""form-label""></label><textarea id=""answer4"" class=""textarea"" placeholder=""กรอกคำตอบของคุณที่นี่...""></textarea></div>
+                    <div class=""form-group""><label id=""question5-label"" for=""answer5"" class=""form-label""></label><textarea id=""answer5"" class=""textarea"" placeholder=""กรอกคำตอบของคุณที่นี่...""></textarea></div>
 
-                    <button type="submit" id="submitButton" class="btn btn-success">ส่งคำตอบ</button>
+                    <button type=""submit"" id=""submitButton"" class=""btn btn-success"">ส่งคำตอบ</button>
                 </div>
             </form>
         </div>
     </div>
 
     <!-- Custom Modal -->
-    <div id="customModal" class="modal-overlay">
-        <div class="modal-content">
-            <h3 id="modalTitle" class="modal-title">แจ้งเตือน</h3>
-            <div id="modalMessage" class="modal-message">ข้อความ</div>
-            <button id="modalBtn" class="modal-btn">ตกลง</button>
+    <div id=""customModal"" class=""modal-overlay"">
+        <div class=""modal-content"">
+            <h3 id=""modalTitle"" class=""modal-title"">แจ้งเตือน</h3>
+            <div id=""modalMessage"" class=""modal-message"">ข้อความ</div>
+            <button id=""modalBtn"" class=""modal-btn"">ตกลง</button>
         </div>
     </div>
 
@@ -479,7 +479,7 @@
                             }
                         }
                     } else {
-                        throw new Error("LIFF SDK not loaded");
+                        throw new Error(""LIFF SDK not loaded"");
                     }
                 } catch (error) {
                     console.warn('LIFF Init failed or Error:', error);
@@ -530,13 +530,13 @@
                         }
                     });
                     
-                    if (!hasOptions) throw new Error("No participants found");
+                    if (!hasOptions) throw new Error(""No participants found"");
 
                 } catch (error) {
                     console.error('Error fetching Google Sheet data:', error);
                     loader.innerHTML = `
-                        <p style="color: #EF4444; font-weight: bold;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>
-                        <button class="btn btn-back" onclick="location.reload()" style="margin-top:10px;">ลองใหม่อีกครั้ง</button>
+                        <p style=""color: #EF4444; font-weight: bold;"">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>
+                        <button class=""btn btn-back"" onclick=""location.reload()"" style=""margin-top:10px;"">ลองใหม่อีกครั้ง</button>
                     `;
                 }
             }
@@ -578,10 +578,10 @@
             // --- Navigation Logic ---
             nextButton.addEventListener('click', function() {
                 const selectedIndex = participantDropdown.value;
-                if (selectedIndex === "") {
+                if (selectedIndex === """") {
                     errorMessage.style.display = 'block';
-                    participantDropdown.parentElement.style.animation = "shake 0.5s";
-                    setTimeout(() => participantDropdown.parentElement.style.animation = "", 500);
+                    participantDropdown.parentElement.style.animation = ""shake 0.5s"";
+                    setTimeout(() => participantDropdown.parentElement.style.animation = """", 500);
                 } else {
                     errorMessage.style.display = 'none';
                     updateProblemContent(selectedIndex);
@@ -597,7 +597,7 @@
                 window.scrollTo(0, 0);
             });
             
-            // --- Form Submission Logic (Always use client-side send) ---
+            // --- Form Submission Logic (Smart Hybrid Mode) ---
             form.addEventListener('submit', async function(event) {
                 event.preventDefault();
                 submitButton.disabled = true;
@@ -648,7 +648,7 @@ User ID: ${lineUserId.startsWith('GUEST') ? 'Guest' : lineUserId.substring(0, 5)
 -------------------------
 ขอบคุณที่ร่วมตอบแบบสอบถาม`;
 
-                // --- 2. Send to GAS (Data Only) ---
+                // --- 2. Send to GAS ---
                 try {
                     const formData = new FormData();
                     formData.append('timestamp', new Date().toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' }));
@@ -661,9 +661,11 @@ User ID: ${lineUserId.startsWith('GUEST') ? 'Guest' : lineUserId.substring(0, 5)
                     formData.append('q4', questions.q4); formData.append('a4', answers.a4);
                     formData.append('q5', questions.q5); formData.append('a5', answers.a5);
                     
-                    // *** Force Client-side Send ***
-                    // ปิดการส่ง Push จาก Server (GAS) เพื่อไม่ให้ข้อความซ้ำหรือเป็นแบบ Bot
-                    formData.append('pushMessage', 'false');
+                    // *** Smart Switch Logic ***
+                    // ถ้าอยู่ในแอป LINE (Mobile): ส่ง 'false' ไปที่ GAS (ไม่ให้ GAS ยิง Push) -> เราจะใช้ liff.sendMessages ยิงเองเพื่อให้เป็น User Message
+                    // ถ้าไม่อยู่ในแอป LINE (Desktop): ส่ง 'true' ไปที่ GAS (ให้ GAS ยิง Push) -> เพราะเราทำอะไรไม่ได้นอกจาก Push
+                    const isLineApp = liff.isInClient();
+                    formData.append('pushMessage', isLineApp ? 'false' : 'true');
                     formData.append('messageContent', summaryMessage);
 
                     const response = await fetch(GAS_URL, {
@@ -677,30 +679,41 @@ User ID: ${lineUserId.startsWith('GUEST') ? 'Guest' : lineUserId.substring(0, 5)
                          throw new Error('Script returned non-success result');
                     }
 
-                    // --- 3. Try Sending Message via LIFF (Client-side) ---
-                    try {
-                        // พยายามส่งข้อความด้วย liff.sendMessages ในทุกกรณี
-                        await liff.sendMessages([{ type: 'text', text: summaryMessage }]);
-                        
-                        if (liff.isInClient()) {
+                    // --- 3. Success Handling (Hybrid) ---
+                    
+                    if (isLineApp) {
+                        // Case A: Mobile LINE App -> ส่งข้อความแบบ User (ฝั่งขวา)
+                        try {
+                            await liff.sendMessages([{ type: 'text', text: summaryMessage }]);
                             liff.closeWindow();
-                        } else {
-                            showModal('บันทึกสำเร็จ', 'ส่งข้อมูลและข้อความเรียบร้อยแล้ว', () => {
-                                location.reload();
-                            });
+                        } catch (msgError) {
+                            console.error(""LIFF Send Error:"", msgError);
+                            // ถ้าส่งแบบ User ไม่ผ่าน (เช่น user บล็อกบอท หรือสิทธิ์ไม่พอ)
+                            // แจ้งเตือนแล้วปิดหน้าต่าง
+                            liff.closeWindow();
                         }
-                    } catch (msgError) {
-                        console.error("LIFF Send Error:", msgError);
-                        let errorMsg = 'บันทึกข้อมูลลง Sheet สำเร็จ<br>แต่ไม่สามารถส่งข้อความเข้าแชทได้';
-                        
-                        // เพิ่มคำอธิบายกรณีเป็น Browser
-                        if (!liff.isInClient()) {
-                            errorMsg += '<br><br><small style="color:red">สาเหตุ: liff.sendMessages ไม่รองรับการทำงานบน External Browser</small>';
+                    } else {
+                        // Case B: Desktop Browser -> ตรวจสอบผล Push Message จาก Server (ฝั่งซ้าย)
+                        let modalTitleText = 'บันทึกสำเร็จ';
+                        let modalBodyText = 'ข้อมูลถูกบันทึกและส่งเข้า LINE ของคุณเรียบร้อยแล้ว';
+                        let isSuccess = true;
+
+                        // ตรวจสอบสถานะ lineApiStatus จาก GAS
+                        if (result.lineApiStatus && result.lineApiStatus !== 'Success' && result.lineApiStatus !== 'skipped') {
+                            modalTitleText = 'บันทึกข้อมูลแล้ว (แต่ส่ง LINE ไม่ผ่าน)';
+                            let errorMsg = result.lineApiStatus;
+                            let fixSuggestion = 'กรุณาตรวจสอบ Channel Access Token ใน Google Apps Script';
+
+                            if (errorMsg.includes(""UrlFetchApp"") || errorMsg.includes(""script.external_request"")) {
+                                fixSuggestion = '<strong>การแก้ไข:</strong> สคริปต์ยังไม่ได้รับอนุญาตให้ส่งข้อมูลออกภายนอก<br>1. ไปที่หน้าแก้ไข Google Apps Script<br>2. ลองกด Run ฟังก์ชัน pushLineMessage (หรือ doPost)<br>3. กดยอมรับสิทธิ์ (Review Permissions)<br>4. Deploy ใหม่ (New Deployment)';
+                            }
+
+                            modalBodyText = `บันทึกข้อมูลลง Sheet สำเร็จ แต่เกิดข้อผิดพลาดในการส่งข้อความ LINE:<br><br><code style=""color:red; background:#fee; padding:2px 4px; border-radius:4px; display:block; margin-bottom:10px;"">${errorMsg}</code><br>${fixSuggestion}`;
+                            isSuccess = false;
                         }
-                        
-                        showModal('บันทึกสำเร็จ (มีข้อแจ้งเตือน)', errorMsg, () => {
-                            if (liff.isInClient()) liff.closeWindow();
-                            else location.reload();
+
+                        showModal(modalTitleText, modalBodyText, () => {
+                            location.reload();
                         });
                     }
                     
@@ -719,4 +732,4 @@ User ID: ${lineUserId.startsWith('GUEST') ? 'Guest' : lineUserId.substring(0, 5)
         document.addEventListener('DOMContentLoaded', main);
     </script>
 </body>
-</html>
+</html>"
